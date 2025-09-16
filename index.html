@@ -2,29 +2,53 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Особистий веб-сайт Мельник Д. </title>
+  <title>Особистий веб-сайт Мельник Д.</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Щоб приховувати блоки */
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Особистий веб-сайт Мельник Д.</h1>
     <nav>
       <ul>
-        <li><a href="#home">Головна</a></li>
-        <li><a href="#about">Про мене</a></li>
-        <li><a href="#practices">Практичні роботи</a></li>
-        <li><a href="#labs">Лабораторні заняття</a></li>
+        <li><a data-target="home">Головна</a></li>
+        <li><a data-target="about">Про мене</a></li>
+        <li><a data-target="practices">Практичні роботи</a></li>
+        <li><a data-target="labs">Лабораторні заняття</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="home">
+  <main>
+    <section id="home" class="active">
+      <h2>Ласкаво просимо!</h2>
+      <p>Це мій особистий сайт.</p>
+    </section>
+
     <section id="about">
       <h2>Про мене</h2>
       <img src="images/photo.jpg" alt="Фото студента" width="200">
       <p><strong>Мельник Дар'я</strong></p>
       <p>Студентка ТЦР. Навчаюся у ДУІКТ.</p>
-      <p>Email:dasha130407daria@gmail.com </p>
+      <p>Email: dasha130407daria@gmail.com</p>
     </section>
 
     <section id="practices">
@@ -32,8 +56,6 @@
       <article>
         <h3>Практична робота №1: Основи HTML</h3>
         <p>Завдання: створити особистий сайт та розклад занять.</p>
-
-        <!-- Таблиця з розкладом -->
         <table border="1" cellpadding="8" cellspacing="0">
           <caption>Розклад занять на вересень</caption>
           <thead>
@@ -50,35 +72,33 @@
               <td>Понеділок</td>
               <td>Математика</td>
               <td>Підприємництво</td>
-              <td>WEB програмування </td>
+              <td>WEB програмування</td>
               <td>-</td>
             </tr>
             <tr>
               <td>Вівторок</td>
-              <td>Підприємництво </td>
+              <td>Підприємництво</td>
               <td>ВМ</td>
-              <td>ІМ </td>
+              <td>ІМ</td>
               <td>-</td>
             </tr>
             <tr>
               <td>Середа</td>
-              <td>WEB програмування </td>
-              <td>АВПЗ-24 </td>
+              <td>WEB програмування</td>
+              <td>АВПЗ-24</td>
               <td>-</td>
               <td>-</td>
             </tr>
             <tr>
               <td>Четвер</td>
-               <td>ІМ </td>
+              <td>ІМ</td>
               <td>JJG-15</td>
-                <td>УМ</td>
-                <td>ФЛ </td>
-              <td>-</td>
-              <td>-</td>
+              <td>УМ</td>
+              <td>ФЛ</td>
             </tr>
             <tr>
               <td>П’ятниця</td>
-              <td>- </td>
+              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -102,5 +122,23 @@
        GitHub: <a href="https://github.com/alonessa13">alonessa13</a></p>
     <p>© 2025 Університет</p>
   </footer>
+
+  <script>
+    // Робимо перемикач блоків
+    const links = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("main section");
+
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        const target = link.getAttribute("data-target");
+        sections.forEach(sec => {
+          sec.classList.remove("active");
+          if (sec.id === target) {
+            sec.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
