@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна №1 – Основи HTML</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Лабораторна №1: Основи HTML</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про мене</a></li>
+        <li><a href="practices.html">Практичні роботи</a></li>
+        <li><a href="labs.html">Лабораторні</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Форма реєстрації</h2>
+    <form action="https://webhook.site/da8a765a-15c6-4f1e-9ccf-012e9bc9ec54" method="post">
+      
+      <label for="fname">Ім’я:</label><br>
+      <input type="text" id="fname" name="firstname" required><br><br>
+
+      <label for="lname">Прізвище:</label><br>
+      <input type="text" id="lname" name="lastname" required><br><br>
+
+      <label for="email">Електронна пошта:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="password">Пароль:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="confirm">Підтвердження паролю:</label><br>
+      <input type="password" id="confirm" name="confirm_password" required><br><br>
+
+      <label for="dob">Дата народження:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="gender">Стать:</label><br>
+      <select id="gender" name="gender">
+        <option value="">Оберіть</option>
+        <option value="male">Чоловіча</option>
+        <option value="female">Жіноча</option>
+        <option value="other">Інше</option>
+      </select><br><br>
+
+      <input type="submit" value="Зареєструватися">
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Університет</p>
+  </footer>
+</body>
+</html>
