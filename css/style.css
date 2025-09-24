@@ -56,3 +56,37 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
+.my-form {
+  background-color: #f4f9ff;         
+  color: #222;                       
+  width: 400px;                      
+  padding: 20px;                     
+  border-radius: 12px;               
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); 
+  margin: 50px auto;                 
+  position: relative;                
+}
+
+.my-form input,
+.my-form textarea,
+.my-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.my-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.my-form button:hover {
+  background-color: #45a049;
+}
