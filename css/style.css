@@ -90,3 +90,82 @@ footer {
 .my-form button:hover {
   background-color: #45a049;
 }
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #d9e7f2);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Заголовки */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 30px;
+  font-size: 2.2em;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+h2 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Форма */
+.my-form {
+  background-color: #f4f9ff;
+  color: #222;
+  width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Поля вводу */
+.my-form input,
+.my-form textarea,
+.my-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76,175,80,0.5);
+  outline: none;
+}
+
+/* Кнопка */
+.my-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.my-form button:hover {
+  background-color: #45a049;
+}
