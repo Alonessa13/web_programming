@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+/* Верхня панель */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  color: red;
+}
+
+.search {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.profile {
+  background: #00897b;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Контейнер */
+.container {
+  display: flex;
+}
+
+/* Бокова панель */
+.sidebar {
+  width: 220px;
+  background: white;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: #f0f0f0;
+}
+
+.sidebar h4 {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Контент */
+.content {
+  flex: 1;
+  padding: 15px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tags button {
+  background: #e5e5e5;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tags button:hover {
+  background: #ccc;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.video {
+  background: white;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.video img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video p {
+  margin-top: 8px;
+  font-size: 14px;
+}
