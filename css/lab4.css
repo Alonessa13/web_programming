@@ -1,0 +1,111 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.week-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.week-info input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100px;
+}
+
+.check-pair label {
+  margin-left: 15px;
+  font-size: 0.9em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 10px;
+}
+
+.side h3 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.side ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.side input[type="text"] {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  margin-left: 5px;
+  padding: 3px;
+}
+
+.side input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.days div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.days h3 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 5px;
+}
+
+.days textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .days {
+    grid-template-columns: 1fr;
+  }
+}
