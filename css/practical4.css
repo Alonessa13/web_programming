@@ -1,92 +1,56 @@
 body {
-  font-family: "Poppins", sans-serif;
-  background: #f2f4f8;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
+  background: #f2f4f7;
   margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #ddd;
   padding: 20px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
 h1 {
-  margin: 0;
-  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .keyboard {
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  gap: 8px;
-  justify-items: center;
-  margin: 40px auto;
-  max-width: 900px;
+  grid-template-columns: repeat(22, 50px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .key {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-  padding: 10px 0;
-  width: 100%;
-  transition: all 0.2s ease;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
 }
 
 .key:hover {
-  background-color: #e6f2ff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: #e8ebf0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
 }
 
-.key:active {
-  background-color: #b3daff;
-  transform: translateY(2px);
+/* Розширені клавіші */
+.backspace { grid-column: span 2; }
+.tab { grid-column: span 2; }
+.caps { grid-column: span 2; }
+.shift { grid-column: span 3; }
+.enter { grid-column: span 2; }
+.space { grid-column: span 6; }
+.plus { grid-row: span 2; }
+.enter { grid-row: span 2; }
+.zero { grid-column: span 2; }
+
+/* Маленькі клавіші */
+.small {
+  font-size: 0.8em;
+  padding: 6px;
 }
 
-.wide {
-  grid-column: span 2;
-}
-
-.wider {
-  grid-column: span 3;
-}
-
-.extra-wide {
-  grid-column: span 6;
-}
-
-.links {
-  margin-top: 40px;
-}
-
-.links h2 {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.links a {
-  text-decoration: none;
-  color: #0055aa;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.links a:hover {
-  color: #0099ff;
-}
-
-footer {
-  background: #ddd;
-  padding: 10px;
-  margin-top: 30px;
-  font-size: 14px;
+/* Стрілки */
+.up, .down, .left, .right {
+  background: #e6e9ee;
 }
