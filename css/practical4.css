@@ -1,0 +1,79 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.requirements {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 6px;
+  background: #ddd;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.key {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 0 #bbb;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+/* Стан натискання */
+.key:hover {
+  background: #e6e6e6;
+  box-shadow: 0 2px 0 #999;
+  transform: translateY(1px);
+}
+
+.key:active {
+  background: #ccc;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+  transform: translateY(2px);
+}
+
+/* Різні розміри клавіш */
+.wide { grid-column: span 2; }
+.medium { grid-column: span 1.5; }
+.large { grid-column: span 2.2; }
+.extra-large { grid-column: span 3; }
+.spacebar { grid-column: span 6; }
+
+/* Підвал */
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #555;
+}
