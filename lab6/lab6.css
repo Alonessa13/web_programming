@@ -1,0 +1,68 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* СЦЕНА */
+.scene {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#87ceeb, #bde0fe);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ХМАРИ */
+.cloud {
+    position: absolute;
+    top: 20%;
+    width: 250px;
+    height: 120px;
+    background: url("https://i.imgur.com/8K3Jd7G.png") no-repeat center/contain;
+    animation: moveClouds 25s linear infinite;
+}
+
+.cloud2 {
+    top: 40%;
+    animation-duration: 35s;
+    opacity: 0.8;
+}
+
+@keyframes moveClouds {
+    0% { left: -300px; }
+    100% { left: 110%; }
+}
+
+/* ЗЕМЛЯ */
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    background: #5cb85c;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* СПРАЙТ ПОКЕМОНА — Пікачу */
+.pikachu {
+    position: absolute;
+    bottom: 160px;
+    left: 50px;
+    width: 80px;    /* ширина кадру */
+    height: 80px;   /* висота кадру */
+
+    /* Використовуємо sprite sheet */
+    background: url('https://img.pokemondb.net/sprites/black-white/anim/sprite/pikachu.png') 0 0 no-repeat;
+
+    /* Анімація бігу */
+    animation: run 0.6s steps(4) infinite;
+}
+
+/* Анімація перемикання кадрів */
+@keyframes run {
+    from { background-position: 0 0; }
+    to   { background-position: -320px 0; }
+}
