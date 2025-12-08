@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Головна – Особистий веб-сайт</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо — Мельник Д.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Особистий веб-сайт Мельник Д.</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Головна</a></li>
-        <li><a href="about.html">Про мене</a></li>
-        <li><a href="practices.html">Практичні роботи</a></li>
-        <li><a href="labs.html">Лабораторні</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Вітаю на моєму сайті!</h2>
-    <p>Це мій перший сайт, зроблений для навчання HTML та WEB-програмування.</p>
-  </main>
+<!-- Навігація -->
+<header class="navbar">
+    <div class="container nav-container">
+        <h2 class="logo">Melnyk<span>D.</span></h2>
 
-  <footer>
-    <p>Контакти: dasha130407daria@gmail.com</p>
-    <p>© 2025 Університет</p>
-  </footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="practices.html">Практичні роботи</a></li>
+                <li><a href="labs.html">Лабораторні</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Головний блок (без фото) -->
+<section class="hero no-photo">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <h1>Вітаю! Я <span>Мельник Д.</span></h1>
+            <p class="subtitle">
+                Створюю веб-проєкти, вивчаю HTML, CSS, JavaScript та виконую практичні й лабораторні роботи.
+            </p>
+
+            <div class="btn-group">
+                <a href="practices.html" class="btn-primary">Мої роботи</a>
+                <a href="about.html" class="btn-secondary">Про мене</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Футер -->
+<footer>
+    <div class="container">
+        <p>Контакти: <a href="mailto:dasha130407daria@gmail.com">dasha130407daria@gmail.com</a></p>
+        <p>© 2025 Університет</p>
+    </div>
+</footer>
+
 </body>
 </html>
