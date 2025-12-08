@@ -1,4 +1,4 @@
-/* Загальні стилі */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* СЦЕНА */
+
 .scene {
     width: 100vw;
     height: 100vh;
@@ -15,7 +15,7 @@ body {
     overflow: hidden;
 }
 
-/* ХМАРИ */
+
 .cloud {
     position: absolute;
     top: 20%;
@@ -36,7 +36,7 @@ body {
     100% { left: 110%; }
 }
 
-/* ЗЕМЛЯ */
+
 .ground {
     position: absolute;
     bottom: 0;
@@ -46,22 +46,22 @@ body {
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* СПРАЙТ ПОКЕМОНА — Пікачу */
+
 .pikachu {
     position: absolute;
     bottom: 160px;
     left: 50px;
-    width: 80px;    /* ширина кадру */
-    height: 80px;   /* висота кадру */
+    width: 80px;    
+    height: 80px;   
 
-    /* Використовуємо sprite sheet */
+    
     background: url('https://img.pokemondb.net/sprites/black-white/anim/sprite/pikachu.png') 0 0 no-repeat;
 
-    /* Анімація бігу */
+  
     animation: run 0.6s steps(4) infinite;
 }
 
-/* Анімація перемикання кадрів */
+
 @keyframes run {
     from { background-position: 0 0; }
     to   { background-position: -320px 0; }
