@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторна №5 — Portfolio UI</title>
+    <title>Лабораторна №8 — Portfolio UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,11 @@
 <header>
     <nav class="container nav">
         <h2 class="logo">MyPortfolio</h2>
-        <ul>
+
+        
+        <div class="menu-icon" id="menuBtn">&#9776;</div>
+
+        <ul id="navList">
             <li><a href="#home">Головна</a></li>
             <li><a href="#about">Про мене</a></li>
             <li><a href="#projects">Проєкти</a></li>
@@ -31,10 +35,7 @@
         </div>
 
         <div class="hero-img">
-            <div class="hero-img">
-    <img src="myphoto.jpg" alt="My photo" class="profile-photo">
-</div>
-
+            <img src="myphoto.jpg" alt="My photo" class="profile-photo">
         </div>
     </div>
 </section>
@@ -43,7 +44,7 @@
     <h2>Про мене</h2>
     <p>
         Мене звати Дар'я.  
-        Я вивчаю HTML, CSS.
+        Я займаюся веб-розробкою та вивчаю HTML, CSS.
         Люблю створювати інтерфейси, працювати з анімаціями і робити сайти зручними.
     </p>
 </section>
@@ -59,10 +60,9 @@
 
 <section id="skills" class="skills container">
     <h2>Навички</h2>
-    <div class="skills-list"> 
+    <div class="skills-list">
         <span>HTML</span>
         <span>CSS</span>
-        <span>JavaScript</span>
         <span>GitHub</span>
         <span>Responsive Design</span>
     </div>
@@ -74,8 +74,15 @@
 </section>
 
 <footer>
-    <p>© 2025 Portfolio UI. Усі права захищено.</p>
+    <p>© 2025 Portfolio UI. </p>
 </footer>
+
+<script>
+    
+    document.getElementById("menuBtn").onclick = function(){
+        document.getElementById("navList").classList.toggle("open");
+    }
+</script>
 
 </body>
 </html>
